@@ -12,7 +12,7 @@ export default function Page() {
           <Heading as="h2" variant="page-title">
             Nicolás Pantoja
           </Heading>
-          <p>Digital Anthropos ( Father / Developer / Designer )</p>
+          <p>Digital Anthropos ( Dad / Developer / Designer )</p>
         </Box>
       </Box>
     </Container>
