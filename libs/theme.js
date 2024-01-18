@@ -1,6 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
-import { global } from 'styled-jsx/css'
 
 const styles = () => {
   global: (props) => ({
@@ -15,8 +14,41 @@ const components = {
     variants: {
       'section-title': {
         textDecoration: 'underline',
-        fontSize
+        fontSize: 20,
+        textUnderlineOffset: 6,
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 4
       }
     }
+  },
+  Link: {
+    baseStyle: (props) => ({
+      color: mode('#3d7aed', '#ff63c6')(props),
+      textUnderlineOffset: 3
+    })
   }
 }
+
+const fonts = {
+  heading: "'M Plus Rounded ic'"
+}
+
+const colors = {
+  glassTeal: '#88ccca'
+}
+
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: true
+}
+
+const theme = extendTheme({
+  config,
+  styles,
+  components,
+  colors,
+  fonts
+})
+
+export default theme

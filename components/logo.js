@@ -20,8 +20,10 @@ padding: 10px;
 
 const Logo = () => {
   const footPrintImg = `/images/logo${useColorModeValue('')}.png`
+  // const footPrintImg = '/images/logo.png'
+
   return (
-    <Link href="/">
+    <Link href="/" legacyBehavior>
       <LogoBox>
         <Image src={footPrintImg} width={20} height={20} alt="logo" />
         <Text
