@@ -1,6 +1,7 @@
 import { Box, Container } from '@chakra-ui/react'
 import Navbar from '../navbar.js'
 import Head from 'next/head'
+import { withEmotionCache } from '@emotion/react'
 
 export default function Main({ children, router }) {
   return (
