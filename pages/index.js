@@ -59,11 +59,11 @@ export default function Page() {
         <Paragraph>
           Nicolás is a software developer based in Ipiales, Colombia, where his
           passion for backend code takes flight. He thrives on crafting digital
-          services that enhance people's lives, and his talent for connecting
-          with others fuels his ability to solve problems and conjure innovative
-          ideas. When he's not coding, Nicolás immerses himself in the world of
-          music, savoring the sounds of his LP collection and sharing his
-          passion with his son.
+          services that enhance people&apos;s lives, and his talent for
+          connecting with others fuels his ability to solve problems and conjure
+          innovative ideas. When he&apos;s not coding, Nicolás immerses himself
+          in the world of music, savoring the sounds of his LP collection and
+          sharing his passion with his son.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
