@@ -5,120 +5,187 @@ import {
   Image,
   useColorModeValue,
   Button,
-  Link
+  Link,
+  SimpleGrid,
+  ListItem,
+  List,
+  Icon
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
+import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
+import {
+  IoLogoTwitter,
+  IoLogoDiscord,
+  IoLogoGithub,
+  IoLogoInstagram
+} from 'react-icons/io5'
+import { FaLastfm } from 'react-icons/fa6'
+import { GridItem } from '../components/grid-item'
 
 export default function Page() {
   return (
-    <Container>
-      <Box
-        borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        p={3}
-        mb={6}
-        align="center"
-      >
-        Hi, I&apos;m a Software Developer!
-      </Box>
-
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Nicolás Pantoja
-          </Heading>
-          <p>Digital Anthropos ( Dad / Developer )</p>
-        </Box>
+    <Layout>
+      <Container>
         <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
+          borderRadius="lg"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          p={3}
+          mb={6}
           align="center"
         >
-          <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/NicolasPantoja.jpeg"
-            alt="Profile Image"
-          />
+          Hi, I&apos;m a Software Developer!
         </Box>
-      </Box>
 
-      <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Work
-        </Heading>
-        <Paragraph>
-          Nicolás is a software developer based in Ipiales, Colombia, where his
-          passion for backend code takes flight. He thrives on crafting digital
-          services that enhance people&apos;s lives, and his talent for
-          connecting with others fuels his ability to solve problems and conjure
-          innovative ideas. When he&apos;s not coding, Nicolás immerses himself
-          in the world of music, savoring the sounds of his LP collection and
-          sharing his passion with his son.
-        </Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My Portfolio
-            </Button>
-          </NextLink>
+        <Box display={{ md: 'flex' }}>
+          <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+              Nicolás Pantoja
+            </Heading>
+            <p>Digital Anthropos ( Dad / Developer )</p>
+          </Box>
+          <Box
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            align="center"
+          >
+            <Image
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              maxWidth="100px"
+              display="inline-block"
+              borderRadius="full"
+              src="/images/NicolasPantoja.jpeg"
+              alt="Profile Image"
+            />
+          </Box>
         </Box>
-      </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>1993</BioYear>
-          Born in Ipiales, Colombia.
-        </BioSection>
-        <BioSection>
-          <BioYear>2015</BioYear>
-          Worked as an administrator at KOAJ - Inveco / Colombia.
-        </BioSection>
-        <BioSection>
-          <BioYear> 2022</BioYear>
-          Complete the Full-Stack Web Development and Computer Science Program
-          ar Academlo.
-        </BioSection>
-        <BioSection>
-          <BioYear>2022</BioYear>
-          Worked as at intern in Colombian T.I Software.
-        </BioSection>
-        <BioSection>
-          <BioYear>2023</BioYear>
-          Worked as a Backend developer at ISOS GROUP / Perú.
-        </BioSection>
-        <BioSection>
-          <BioYear>2023 to present</BioYear>
-          Working as a freelancer.
-        </BioSection>
-        <Section delay={0.3}>
+        <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            I ❤
+            Work
           </Heading>
           <Paragraph>
-            Family,{' '}
-            <Link
-              href="https://open.spotify.com/playlist/7ETbaX34v31mWeQYo3lac7?si=dbb23dc31fa44420"
-              target="_blank"
-            >
-              Music
-            </Link>
-            , Playing Turntable, Concerts and Festivals, Cybersecurity
+            Nicolás is a software developer based in Ipiales, Colombia, where
+            his passion for backend code takes flight. He thrives on crafting
+            digital services that enhance people&apos;s lives, and his talent
+            for connecting with others fuels his ability to solve problems and
+            conjure innovative ideas. When he&apos;s not coding, Nicolás
+            immerses himself in the world of music, savoring the sounds of his
+            LP collection and sharing his passion with his son.
           </Paragraph>
+          <Box align="center" my={4}>
+            <NextLink href="/works">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                My Portfolio
+              </Button>
+            </NextLink>
+          </Box>
         </Section>
-      </Section>
-    </Container>
+
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Bio
+          </Heading>
+          <BioSection>
+            <BioYear>1993</BioYear>
+            Born in Ipiales, Colombia.
+          </BioSection>
+          <BioSection>
+            <BioYear>2015</BioYear>
+            Worked as an administrator at KOAJ - Inveco / Colombia.
+          </BioSection>
+          <BioSection>
+            <BioYear> 2022</BioYear>
+            Complete the Full-Stack Web Development and Computer Science Program
+            ar Academlo.
+          </BioSection>
+          <BioSection>
+            <BioYear>2022</BioYear>
+            Worked as at intern in Colombian T.I Software.
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            Worked as a Backend developer at ISOS GROUP / Perú.
+          </BioSection>
+          <BioSection>
+            <BioYear>2023 to present</BioYear>
+            Working as a freelancer.
+          </BioSection>
+          <Section delay={0.3}>
+            <Heading as="h3" variant="section-title">
+              I ❤
+            </Heading>
+            <Paragraph>
+              Family,{' '}
+              <Link
+                href="https://open.spotify.com/playlist/7ETbaX34v31mWeQYo3lac7?si=dbb23dc31fa44420"
+                target="_blank"
+              >
+                Music
+              </Link>
+              , Playing Turntable, Concerts and Festivals, Cybersecurity
+            </Paragraph>
+          </Section>
+        </Section>
+
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/Nicccccolas" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @Nicccccolas
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.x.com/niccommit" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @niccommit
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://instagram.com/nicccccolass" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @nicccccolass
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.last.fm/user/Nicccccolas" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={FaLastfm} />}
+                >
+                  @Nicccccolas
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+        </Section>
+      </Container>
+    </Layout>
   )
 }

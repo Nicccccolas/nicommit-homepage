@@ -1,9 +1,10 @@
 import { Box, Container } from '@chakra-ui/react'
 import Navbar from '../navbar.js'
 import Head from 'next/head'
-import { withEmotionCache } from '@emotion/react'
+import VoxelDevil from '../voxel-devil.js'
+import NoSsr from '../no-ssr.js'
 
-export default function Main({ children, router }) {
+const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
@@ -12,8 +13,13 @@ export default function Main({ children, router }) {
       </Head>
       <Navbar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
+        {/* <NoSsr> */}
+        {/*   <VoxelDevil /> */}
+        {/* </NoSsr> */}
         {children}
       </Container>
     </Box>
   )
 }
+
+export default Main
