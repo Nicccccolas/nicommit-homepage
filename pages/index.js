@@ -6,7 +6,7 @@ import {
   useColorModeValue,
   Button,
   Link,
-  SimpleGrid,
+  // SimpleGrid,
   ListItem,
   List,
   Icon
@@ -19,12 +19,12 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import {
   IoLogoTwitter,
-  IoLogoDiscord,
+  // IoLogoDiscord,
   IoLogoGithub,
   IoLogoInstagram
 } from 'react-icons/io5'
 import { FaLastfm } from 'react-icons/fa6'
-import { GridItem } from '../components/grid-item'
+// import { GridItem } from '../components/grid-item'
 
 export default function Page() {
   return (
