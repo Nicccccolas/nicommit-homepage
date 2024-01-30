@@ -16,20 +16,24 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import { IoLogoGithub } from 'react-icons/io5'
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href} legacyBehavior>
-      <Link
-        p={2}
-        bg={active ? 'glassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <Link
+      as={NextLink}
+      href={href}
+      target={target}
+      scroll={false}
+      p={2}
+      bg={active ? 'glassTeal' : undefined}
+      color={active ? '#202023' : inactiveColor}
+      {...props}
+    >
+      {children}
+    </Link>
   )
 }
 
@@ -41,7 +45,7 @@ const Navbar = (props) => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#ffffff40', '#510a3280')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -71,8 +75,19 @@ const Navbar = (props) => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/bio" path={path}>
+            Bio
+          </LinkItem>
+          <LinkItem
+            href="https://github.com/Nicccccolas/nicommit-homepage"
+            target="_blank"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub /> Source
           </LinkItem>
         </Stack>
 
@@ -85,16 +100,46 @@ const Navbar = (props) => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                bg={useColorModeValue('#D6CEC3', '#2d142c')}
+                borderColor={useColorModeValue('#3d7aed', '#510a32')}
               />
-              <MenuList>
+              <MenuList bg={useColorModeValue('#f0e7db', '#510a32')}>
                 <NextLink href="/" passHref legacyBehavior>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem
+                    as={Link}
+                    bg={useColorModeValue('#f0e7db', '#510a32')}
+                  >
+                    About
+                  </MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref legacyBehavior>
-                  <MenuItem as={Link}>Works</MenuItem>
+                  <MenuItem
+                    as={Link}
+                    bg={useColorModeValue('#f0e7db', '#510a32')}
+                  >
+                    Works
+                  </MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref legacyBehavior>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                <NextLink href="/bio" passHref legacyBehavior>
+                  <MenuItem
+                    as={Link}
+                    bg={useColorModeValue('#f0e7db', '#510a32')}
+                  >
+                    Bio
+                  </MenuItem>
+                </NextLink>
+                <NextLink
+                  href="https://github.com/Nicccccolas"
+                  target="_blank"
+                  passHref
+                  legacyBehavior
+                >
+                  <MenuItem
+                    as={Link}
+                    bg={useColorModeValue('#f0e7db', '#510a32')}
+                  >
+                    View Source
+                  </MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

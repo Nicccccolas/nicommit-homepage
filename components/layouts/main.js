@@ -3,6 +3,7 @@ import Navbar from '../navbar.js'
 import Head from 'next/head'
 // import VoxelDevil from '../voxel-devil.js'
 // import NoSsr from '../no-ssr.js'
+import Footer from '../footer.js'
 
 const Main = ({ children, router }) => {
   return (
@@ -17,6 +18,7 @@ const Main = ({ children, router }) => {
         {/*   <VoxelDevil /> */}
         {/* </NoSsr> */}
         {children}
+        <Footer />
       </Container>
     </Box>
   )

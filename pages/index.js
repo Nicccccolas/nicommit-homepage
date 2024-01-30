@@ -9,14 +9,13 @@ import {
   // SimpleGrid,
   ListItem,
   List,
-  Icon
+  Icon,
+  Text
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
-import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { BioSection, BioYear } from '../components/bio'
 import {
   IoLogoTwitter,
   // IoLogoDiscord,
@@ -24,6 +23,7 @@ import {
   IoLogoInstagram
 } from 'react-icons/io5'
 import { FaLastfm } from 'react-icons/fa6'
+import Paragraph from '../components/paragraph'
 // import { GridItem } from '../components/grid-item'
 
 export default function Page() {
@@ -31,21 +31,20 @@ export default function Page() {
     <Layout>
       <Container>
         <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          display={{ md: 'flex' }}
+          borderRadius={useColorModeValue('lg', 'none')}
+          border={useColorModeValue('none', '3px dashed #ee4540')}
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
           p={3}
           mb={6}
           align="center"
         >
-          Hi, I&apos;m a Software Developer!
-        </Box>
-
-        <Box display={{ md: 'flex' }}>
-          <Box flexGrow={1}>
-            <Heading as="h2" variant="page-title">
+          <Box flexGrow={1} textAlign={{ base: 'center', md: 'initial' }}>
+            <Heading as="h2" variant="page-title" letterSpacing="-0.02em">
               Nicolás Pantoja
             </Heading>
-            <p>Digital Anthropos ( Dad / Developer )</p>
+            <Text fontSize="1.3em">Digital Anthropos</Text>
+            <p>Software Developer!</p>
           </Box>
           <Box
             flexShrink={0}
@@ -55,7 +54,7 @@ export default function Page() {
           >
             <Image
               borderColor="whiteAlpha.800"
-              borderWidth={2}
+              borderWidth={1}
               borderStyle="solid"
               maxWidth="100px"
               display="inline-block"
@@ -68,7 +67,7 @@ export default function Page() {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            About me
           </Heading>
           <Paragraph>
             Nicolás is a software developer based in Ipiales, Colombia, where
@@ -86,52 +85,6 @@ export default function Page() {
               </Button>
             </NextLink>
           </Box>
-        </Section>
-
-        <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
-            Bio
-          </Heading>
-          <BioSection>
-            <BioYear>1993</BioYear>
-            Born in Ipiales, Colombia.
-          </BioSection>
-          <BioSection>
-            <BioYear>2015</BioYear>
-            Worked as an administrator at KOAJ - Inveco / Colombia.
-          </BioSection>
-          <BioSection>
-            <BioYear> 2022</BioYear>
-            Complete the Full-Stack Web Development and Computer Science Program
-            ar Academlo.
-          </BioSection>
-          <BioSection>
-            <BioYear>2022</BioYear>
-            Worked as at intern in Colombian T.I Software.
-          </BioSection>
-          <BioSection>
-            <BioYear>2023</BioYear>
-            Worked as a Backend developer at ISOS GROUP / Perú.
-          </BioSection>
-          <BioSection>
-            <BioYear>2023 to present</BioYear>
-            Working as a freelancer.
-          </BioSection>
-          <Section delay={0.3}>
-            <Heading as="h3" variant="section-title">
-              I ❤
-            </Heading>
-            <Paragraph>
-              Family,{' '}
-              <Link
-                href="https://open.spotify.com/playlist/7ETbaX34v31mWeQYo3lac7?si=dbb23dc31fa44420"
-                target="_blank"
-              >
-                Music
-              </Link>
-              , Playing Turntable, Concerts and Festivals, Cybersecurity
-            </Paragraph>
-          </Section>
         </Section>
 
         <Section delay={0.4}>
