@@ -17,6 +17,9 @@ const TechStack = () => {
     { icon: IoLogoDocker, name: 'DOCKER' }
   ]
 
+  const bgColor = useColorModeValue('#ffffff40', '#51013280')
+  const bgHover = useColorModeValue('#ffffff80', '#510132b3')
+
   return (
     <SimpleGrid columns={[2, 2, 3]} pt={4} gap={[2, 4, 4]} align="center">
       {techItems.map((tech, index) => (
@@ -25,10 +28,10 @@ const TechStack = () => {
           border="0.5px dashed rgba(238, 69, 64, 0.3)"
           borderRadius="md"
           p={3}
-          bg={useColorModeValue('#ffffff40', '#51013280')}
+          bg={{ bgColor }}
           style={{ backdropFilter: 'blur(10px)' }}
           _hover={{
-            bg: useColorModeValue('#ffffff80', '#510132b3'),
+            bg: bgHover,
             transform: 'scale(1.05)'
           }}
         >
