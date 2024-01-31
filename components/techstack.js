@@ -1,10 +1,4 @@
-import {
-  Box,
-  Flex,
-  SimpleGrid,
-  Text,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Box, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import { IoLogoReact, IoLogoNodejs, IoLogoDocker } from 'react-icons/io5'
 import { BiLogoPostgresql, BiLogoMongodb, BiLogoAws } from 'react-icons/bi'
 import { TbBrandNextjs } from 'react-icons/tb'
