@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Nicolás Pantoja<hi@nicommit.io",
+  "author": "Nicolás Pantoja<hi@nicommit.io>",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
