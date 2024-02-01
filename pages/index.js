@@ -61,7 +61,7 @@ export default function Page() {
               <Text
                 as="p"
                 fontWeight="bold"
-                fontsize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
                 display="inline"
                 textDecoration="line-through"
               >
@@ -71,7 +71,7 @@ export default function Page() {
               <Text
                 as="span"
                 fontWeight="light"
-                fontsize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
                 display="inline"
                 textDecoration="line-through"
                 whiteSpace="none"
@@ -81,6 +81,7 @@ export default function Page() {
               <Text
                 as="span"
                 fontWeight="bold"
+                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
                 display="inline"
                 textDecoration="none"
               >
