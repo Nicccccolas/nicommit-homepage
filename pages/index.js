@@ -2,8 +2,6 @@ import {
   Container,
   Box,
   Heading,
-  Image,
-  useColorModeValue,
   Button,
   Link,
   // SimpleGrid,
@@ -29,42 +27,76 @@ import Paragraph from '../components/paragraph'
 export default function Page() {
   return (
     <Layout>
-      <Container>
+      <Container height="100vh" width="100%">
+        {/* <Box */}
+        {/*   // height="100vh" */}
+        {/*   // width="100%" */}
+        {/*   mt={3} */}
+        {/*   display={{ md: 'flex' }} */}
+        {/*   // borderRadius={useColorModeValue('lg', 'none')} */}
+        {/*   // border={useColorModeValue('none', '2px dashed #ee454040')} */}
+        {/*   bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} */}
+        {/*   p={3} */}
+        {/*   mb={6} */}
+        {/*   align="center" */}
+        {/* > */}
         <Box
-          display={{ md: 'flex' }}
-          borderRadius={useColorModeValue('lg', 'none')}
-          border={useColorModeValue('none', '3px dashed #ee4540')}
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
-          p={3}
-          mb={6}
+          display="flex"
+          flexDir="column"
           align="center"
+          flexGrow={1}
+          justifyContent="center"
+          height="100%"
+          // textAlign={{ base: 'center', md: 'initial' }}
         >
-          <Box flexGrow={1} textAlign={{ base: 'center', md: 'initial' }}>
+          <Box textAlign="left" maxW="400px">
             <Heading as="h2" variant="page-title" letterSpacing="-0.02em">
-              Nicolás Pantoja
+              <Text
+                fontWeight="light"
+                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                display="inline"
+              >
+                Hi, I&apos;m{' '}
+              </Text>
+              <Text
+                as="p"
+                fontWeight="bold"
+                fontsize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                display="inline"
+                textDecoration="line-through"
+              >
+                {' '}
+                Nicolás Pantoja,
+              </Text>
+              <Text
+                as="span"
+                fontWeight="light"
+                fontsize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                display="inline"
+                textDecoration="line-through"
+                whiteSpace="none"
+              >
+                {''} a.k.a{''}
+              </Text>
+              <Text
+                as="span"
+                fontWeight="bold"
+                display="inline"
+                textDecoration="none"
+              >
+                {'\u00A0'}
+                Nicccccolas
+              </Text>
             </Heading>
-            <Text fontSize="1.3em">Digital Anthropos</Text>
+            <Text fontSize={{ base: '2xl', md: '3xl', lg: '4x1' }}>
+              Digital Anthropos
+            </Text>
             <p>Software Developer!</p>
           </Box>
-          <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            align="center"
-          >
-            <Image
-              borderColor="whiteAlpha.800"
-              borderWidth={1}
-              borderStyle="solid"
-              maxWidth="100px"
-              display="inline-block"
-              borderRadius="full"
-              src="/images/NicolasPantoja.jpeg"
-              alt="Profile Image"
-            />
-          </Box>
         </Box>
+      </Container>
 
+      <Container>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
             About me

@@ -17,7 +17,7 @@ const TechStack = () => {
     { icon: IoLogoDocker, name: 'DOCKER' }
   ]
 
-  const bgColor = useColorModeValue('#ffffff40', '#51013280')
+  const bgColor = useColorModeValue('#ffffff50', '#80133630')
   const bgHover = useColorModeValue('#ffffff80', '#510132b3')
 
   return (
@@ -28,7 +28,7 @@ const TechStack = () => {
           border="0.5px dashed rgba(238, 69, 64, 0.3)"
           borderRadius="md"
           p={3}
-          bg={{ bgColor }}
+          bg={bgColor}
           style={{ backdropFilter: 'blur(10px)' }}
           _hover={{
             bg: bgHover,

@@ -1,9 +1,4 @@
-import {
-  Container,
-  Heading /*SimpleGrid*/,
-  Divider,
-  Link
-} from '@chakra-ui/react'
+import { Container, Heading, Divider, Link } from '@chakra-ui/react'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -53,6 +48,15 @@ const Bio = () => {
         <Section delay={0.2}>
           <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
+              Tech Stack
+            </Heading>
+            <TechStack />
+          </Section>
+        </Section>
+        <Section delay={0.2}>
+          <Divider my={4} />
+          <Section delay={0.3}>
+            <Heading as="h3" variant="section-title">
               I ❤
             </Heading>
             <Paragraph>
@@ -65,17 +69,6 @@ const Bio = () => {
               </Link>
               , Playing Turntable, Concerts and Festivals, Cybersecurity.
             </Paragraph>
-          </Section>
-
-          <Divider my={4} />
-
-          <Section delay={0.2}>
-            <Section delay={0.3}>
-              <Heading as="h3" variant="section-title">
-                Tech Stack
-              </Heading>
-              <TechStack />
-            </Section>
           </Section>
         </Section>
       </Container>

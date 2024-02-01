@@ -7,7 +7,7 @@ const styles = {
       bg: mode('#f0e7db', '#2d142c')(props),
       fontFamily: mode(
         'body',
-        "'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace"
+        "'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'"
       )(props)
     }
   })
