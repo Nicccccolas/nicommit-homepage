@@ -53,24 +53,6 @@ const Bio = () => {
             <TechStack />
           </Section>
         </Section>
-        <Section delay={0.2}>
-          <Divider my={4} />
-          <Section delay={0.3}>
-            <Heading as="h3" variant="section-title">
-              I ❤
-            </Heading>
-            <Paragraph>
-              Family,{' '}
-              <Link
-                href="https://open.spotify.com/playlist/7ETbaX34v31mWeQYo3lac7?si=dbb23dc31fa44420"
-                target="_blank"
-              >
-                Music
-              </Link>
-              , Playing Turntable, Concerts and Festivals, Cybersecurity.
-            </Paragraph>
-          </Section>
-        </Section>
       </Container>
     </Layout>
   )

@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
 font-weight: bold;
-font-size: 20px;
+font-size: 25px;
 display: inline-flex;
 align-items: center;
 height: 30px;
@@ -26,7 +26,7 @@ const Logo = () => {
         <Image src={footPrintImg} width={25} height={25} alt="logo" />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily="M PLUS Rounded 1c"
+          fontFamily={useColorModeValue('M Plus Rounded 1c', 'monospace')}
           fontWeight="bold"
           ml={3}
         >

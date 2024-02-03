@@ -45,15 +45,16 @@ const Navbar = (props) => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#510a3280')}
+      bg={useColorModeValue('#ffffff40', '#2d142c80')}
+      fontFamily={useColorModeValue('M Plus Rounded 1c', 'monospace')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
     >
       <Container
         display="flex"
-        p={2}
-        maxW="container.md"
+        paddingY={5}
+        maxW="container.lg"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -71,6 +72,7 @@ const Navbar = (props) => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
+          fontSize={'large'}
         >
           <LinkItem href="/works" path={path}>
             Works
@@ -129,7 +131,7 @@ const Navbar = (props) => {
                   </MenuItem>
                 </NextLink>
                 <NextLink
-                  href="https://github.com/Nicccccolas"
+                  href="https://github.com/Nicccccolas/nicommit-homepage"
                   target="_blank"
                   passHref
                   legacyBehavior
