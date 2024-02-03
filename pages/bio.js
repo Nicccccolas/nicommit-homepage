@@ -1,8 +1,7 @@
-import { Container, Heading, Divider, Link } from '@chakra-ui/react'
+import { Container, Heading, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
-import Paragraph from '../components/paragraph'
 import TechStack from '../components/techstack'
 
 const Bio = () => {
