@@ -61,7 +61,7 @@ export default function About() {
         </Paragraph>
       </Section>
 
-      <Section delay={0.4}>
+      <Section delay={0.7}>
         <Box
           style={{
             display: 'flex',
@@ -86,7 +86,11 @@ export default function About() {
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
-        <List>
+        <List
+          display={{ base: 'initial', md: 'flex' }}
+          justifyContent="center"
+          align="center"
+        >
           <ListItem>
             <Link href="https://github.com/Nicccccolas" target="_blank">
               <Button

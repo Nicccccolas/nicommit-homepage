@@ -7,7 +7,11 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
   return (
     <Layout title="Carmen Travel">
-      <Container>
+      <Container
+        maxW="container.lg"
+        px={{ base: 'initial', md: '4em' }}
+        mb={10}
+      >
         <Title>
           Carmen Travel <Badge>2023</Badge>
         </Title>

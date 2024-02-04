@@ -7,7 +7,7 @@ import TechStack from '../components/techstack'
 const Bio = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW="container.lg">
         <Heading as="h2" fontSize={28} mb={4} mt={4}>
           Bio
         </Heading>

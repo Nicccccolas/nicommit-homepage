@@ -11,7 +11,11 @@ import thumbnailWeather from '../public/images/weather02.png'
 const Works = () => {
   return (
     <Layout>
-      <Container>
+      <Container
+        maxWidth={'container.lg'}
+        px={{ base: 'initial', md: '4em' }}
+        mb={10}
+      >
         <Heading as="h2" fontSize={28} mb={4}>
           Works
         </Heading>
@@ -21,7 +25,7 @@ const Works = () => {
           Collaborations
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={1} gap={6}>
           <Section>
             <WorkGridItem
               id="agtcarmen"

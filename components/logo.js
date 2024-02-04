@@ -15,6 +15,9 @@ padding: 10px;
 &:hover img {
   transform: rotate(15deg);
  }
+@media screen and (max-width: 550px) {
+font-size: 18px
+}
 `
 
 const Logo = () => {
@@ -30,7 +33,7 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
-          NicoPantoja
+          Nicommit
         </Text>
       </LogoBox>
     </Link>
