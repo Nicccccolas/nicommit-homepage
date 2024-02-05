@@ -28,7 +28,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       target={target}
       scroll={false}
       p={2}
-      bg={active ? 'glassTeal' : undefined}
+      bg={active ? 'glassPurple' : undefined}
       color={active ? '#202023' : inactiveColor}
       {...props}
     >
@@ -45,7 +45,7 @@ const Navbar = (props) => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#2d142c80')}
+      bg={useColorModeValue('#ffffff40', '#2d142c40')}
       fontFamily="'Roboto'"
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}

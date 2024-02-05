@@ -12,11 +12,11 @@ const Bio = () => {
         px={{ base: 'initial', md: '4em' }}
         mb={10}
       >
-        <Heading as="h2" fontSize={28} mb={4} mt={4}>
+        <Heading as="h2" fontSize={28} my={8} variant="section-title">
           Bio
         </Heading>
 
-        <Divider my={4} />
+        <Divider my={8} />
 
         <Section delay={0.1}>
           <Box paddingX={{ base: '14px', md: '2.5em' }}>
@@ -51,7 +51,7 @@ const Bio = () => {
 
         <Section delay={0.2}>
           <Section delay={0.3}>
-            <Heading as="h3" variant="section-title">
+            <Heading my={8} as="h2" fontSize={28} variant="section-title">
               Tech Stack
             </Heading>
             <TechStack />

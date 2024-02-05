@@ -38,7 +38,7 @@ export default function About() {
         </Paragraph>
         <Box align="center" my={10}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               My Portfolio
             </Button>
           </NextLink>
@@ -95,7 +95,7 @@ export default function About() {
             <Link href="https://github.com/Nicccccolas" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
                 @Nicccccolas
@@ -106,7 +106,7 @@ export default function About() {
             <Link href="https://www.x.com/niccommit" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >
                 @niccommit
@@ -117,7 +117,7 @@ export default function About() {
             <Link href="https://instagram.com/nicccccolass" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
                 @nicccccolass
@@ -128,7 +128,7 @@ export default function About() {
             <Link href="https://www.last.fm/user/Nicccccolas" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={FaLastfm} />}
               >
                 @Nicccccolas

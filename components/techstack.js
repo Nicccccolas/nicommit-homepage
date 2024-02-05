@@ -29,6 +29,7 @@ const TechStack = () => {
           borderRadius="sm"
           p={3}
           bg={bgColor}
+          mb={1}
           style={{ backdropFilter: 'blur(10px)' }}
           _hover={{
             bg: bgHover,

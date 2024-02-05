@@ -16,7 +16,7 @@ const Works = () => {
         px={{ base: 'initial', md: '4em' }}
         mb={10}
       >
-        <Heading as="h2" fontSize={28} mb={4}>
+        <Heading as="h2" fontSize={28} my={8} variant="section-title">
           Works
         </Heading>
 
