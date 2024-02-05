@@ -15,7 +15,7 @@ padding: 10px;
 &:hover img {
   transform: rotate(15deg);
  }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
 font-size: 18px
 }
 `

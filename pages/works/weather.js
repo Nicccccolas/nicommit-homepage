@@ -1,4 +1,4 @@
-import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
+import { Text, Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -7,7 +7,11 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
   return (
     <Layout title="Pokedex">
-      <Container>
+      <Container
+        maxW="container.lg"
+        px={{ base: 'initial', md: '4em' }}
+        mb={10}
+      >
         <Title>
           Pokedex <Badge>2022</Badge>
         </Title>
@@ -29,6 +33,7 @@ const Work = () => {
             <Link
               href="https://weatherapp-nicolas.netlify.app/"
               target="_blank"
+              fontsize={{ base: '14px', md: '17px' }}
             >
               weatherapp-nicolas.netlify.app
               <ExternalLinkIcon mx="2px" />
@@ -39,9 +44,11 @@ const Work = () => {
               <span>Windows/Linux</span>
             </Meta>
           </ListItem>
-          <ListItem>
+          <ListItem display="flex" justifyItems="left" alignItems="center">
             <Meta>Stack</Meta>
-            <span>JavaScript, React.js</span>
+            <Text fontSize={{ base: 'initial', md: '17px' }}>
+              JavaScript, React.js
+            </Text>
           </ListItem>
           <WorkImage src="/images/weather01.png" alt="Pokedex" />
           <WorkImage src="/images/weather02.png" alt="Pokedex" />

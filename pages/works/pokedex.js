@@ -1,4 +1,4 @@
-import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
+import { Text, Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -7,7 +7,11 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
   return (
     <Layout title="Pokedex">
-      <Container>
+      <Container
+        maxW="container.lg"
+        px={{ base: 'initial', md: '4em' }}
+        mb={10}
+      >
         <Title>
           Pokedex <Badge>2022</Badge>
         </Title>
@@ -27,7 +31,11 @@ const Work = () => {
         <List mt={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://pokeniko.netlify.app/" target="_blank">
+            <Link
+              href="https://pokeniko.netlify.app/"
+              target="_blank"
+              fontsize={{ base: '14px', md: '17px' }}
+            >
               pokeniko.netlify.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
@@ -36,9 +44,11 @@ const Work = () => {
               <span>Windows/Linux</span>
             </Meta>
           </ListItem>
-          <ListItem>
+          <ListItem display="flex" justifyItems="left" alignItems="center">
             <Meta>Stack</Meta>
-            <span>JavaScript, React.js</span>
+            <Text fontSize={{ base: 'initial', md: '17px' }}>
+              JavaScript, React.js
+            </Text>
           </ListItem>
           <WorkImage src="/images/pokedex01.png" alt="Pokedex" />
           <WorkImage src="/images/pokedex02.png" alt="Pokedex" />

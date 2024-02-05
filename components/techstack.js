@@ -26,7 +26,7 @@ const TechStack = () => {
         <Box
           key={index}
           border="0.5px dashed rgba(238, 69, 64, 0.3)"
-          borderRadius="md"
+          borderRadius="sm"
           p={3}
           bg={bgColor}
           style={{ backdropFilter: 'blur(10px)' }}

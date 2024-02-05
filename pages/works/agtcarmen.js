@@ -1,4 +1,4 @@
-import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
+import { Text, Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -21,10 +21,14 @@ const Work = () => {
           tour packages, and a seamless flight reservation process, with secure
           payments through PayPal. Discover the charm of Peru with us!
         </P>
-        <List mt={4} my={4}>
+        <List mx={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://agtcarmen.com" target="_blank">
+            <Link
+              href="https://agtcarmen.com"
+              target="_blank"
+              fontSize={{ base: 'initial', md: '17px' }}
+            >
               www.agtcarmen.com <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
@@ -33,9 +37,11 @@ const Work = () => {
               <span>Windows/macOs/Linux</span>
             </Meta>
           </ListItem>
-          <ListItem>
+          <ListItem display="flex" justifyItems="left" alignItems="center">
             <Meta>Stack</Meta>
-            <span>Node.js, Express.js, S3, EC2</span>
+            <Text fontSize={{ base: 'initial', md: '17px' }}>
+              Node.js, Express.js, S3, EC2
+            </Text>
           </ListItem>
           <WorkImage src="/images/carmen01.png" alt="Carmen-Travel" />
           <WorkImage src="/images/carmen02.png" alt="Carmen-Travel" />
