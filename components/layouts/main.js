@@ -12,8 +12,13 @@ const Main = ({ children, router }) => {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Nicolás Pantoja Díaz" />
-        <meta name="og:title" content="Nicolas Pantoja Díaz" />
+        <meta name="title" property="og:title" content="Nicolas Pantoja Díaz" />
         <meta property="og:type" content="website" />
+        <meta
+          name="description"
+          property="og:description"
+          content="Nicolas Pantoja Díaz Portfolio"
+        />
         <meta
           property="og:image"
           content="https://i.postimg.cc/MH55VxdH/logo3.png"
