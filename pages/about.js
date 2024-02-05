@@ -75,7 +75,7 @@ export default function About() {
             width="80%"
             height="352"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            allowTransparency="true"
+            allowtransparency="true"
             allowFullScreen=""
             loading="lazy"
           ></iframe>

@@ -1,20 +1,12 @@
-import {
-  Container,
-  Box,
-  Heading,
-  // SimpleGrid,
-  Text,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Container, Box, Heading, Text } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import About from './about'
-// import { GridItem } from '../components/grid-item'
 
 export default function Page() {
   return (
     <Layout>
-      <Container maxW="container.xl" pl={{ base: '1.9em', lg: '4em' }}>
+      <Container maxW="container.lg" /*pl={{ base: '1.9em', lg: '4em' }}*/>
         <Section delay={0.1}>
           <Box
             height="100vh"
@@ -24,13 +16,13 @@ export default function Page() {
             flexGrow={1}
             justifyContent="center"
             textAlign="left"
-            mt={-9}
-            mb={-14}
+            mt={-20}
+            // mb={-10}
           >
             <Heading
               as="h1"
               fontWeight="light"
-              fontFamily={useColorModeValue('M Plus Rounded 1c', 'monospace')}
+              fontFamily="'Roboto'"
               fontSize={{ base: '3.8em', md: '6em' }}
               mb={4}
             >

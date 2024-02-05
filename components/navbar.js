@@ -46,14 +46,14 @@ const Navbar = (props) => {
       as="nav"
       w="100%"
       bg={useColorModeValue('#ffffff40', '#2d142c80')}
-      fontFamily={useColorModeValue('M Plus Rounded 1c', 'monospace')}
+      fontFamily="'Roboto'"
       style={{ backdropFilter: 'blur(10px)' }}
-      zIndex={1}
+      zIndex={2}
       {...props}
     >
       <Container
         display="flex"
-        paddingY={5}
+        paddingY="10px"
         maxW="container.lg"
         wrap="wrap"
         align="center"
@@ -71,8 +71,7 @@ const Navbar = (props) => {
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, nmd: 0 }}
-          fontSize={'large'}
+          mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
             Works
@@ -89,8 +88,7 @@ const Navbar = (props) => {
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoGithub fontSize="18px" style={{ marginRight: '3px' }} />{' '}
-            Source
+            <IoLogoGithub /> Source
           </LinkItem>
         </Stack>
 

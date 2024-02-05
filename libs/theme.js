@@ -4,11 +4,7 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode('#f0e7db', '#2d142c')(props),
-      fontFamily: mode(
-        'body',
-        "'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'"
-      )(props)
+      bg: mode('#ffffff', '#2d142c')(props)
     }
   })
 }
@@ -36,11 +32,11 @@ const components = {
 }
 
 const fonts = {
-  heading: "'M Plus Rounded 1c', monospace"
+  heading: "'Roboto'"
 }
 
 const colors = {
-  glassTeal: '#88ccca'
+  glassTeal: '#805AD5'
 }
 
 const config = {
