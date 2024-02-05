@@ -16,17 +16,16 @@ const Works = () => {
         px={{ base: 'initial', md: '4em' }}
         mb={10}
       >
-        <Heading as="h2" fontSize={28} my={8} variant="section-title">
+        <Heading as="h2" fontSize={28} mb={8} variant="section-title">
           Works
         </Heading>
 
-        <Divider my={6} />
         <Heading as="h3" fontSize={20} mb={4}>
           Collaborations
         </Heading>
 
         <SimpleGrid columns={1} gap={6}>
-          <Section>
+          <Section delay={0.2}>
             <WorkGridItem
               id="agtcarmen"
               title="Carmen Travel"
@@ -37,7 +36,8 @@ const Works = () => {
             </WorkGridItem>
           </Section>
 
-          <Section delay={0.1}>
+          <Divider my={8} />
+          <Section delay={0.5}>
             <WorkGridItem
               id="tripties"
               title="Trip-Ties"
@@ -55,13 +55,13 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <Section delay={0.2}>
+          <Section delay={0.8}>
             <WorkGridItem id="pokedex" title="Pokedex" thumbnail={thumbPokedex}>
               Gotta catch &apos;em all! Pokedex app.
             </WorkGridItem>
           </Section>
 
-          <Section delay={0.3}>
+          <Section delay={0.8}>
             <WorkGridItem
               id="rickandmorty"
               title="Rick & Morty"
@@ -71,7 +71,7 @@ const Works = () => {
             </WorkGridItem>
           </Section>
 
-          <Section delay={0.4}>
+          <Section delay={0.8}>
             <WorkGridItem
               id="weather"
               title="Weather App"
@@ -82,6 +82,8 @@ const Works = () => {
             </WorkGridItem>
           </Section>
         </SimpleGrid>
+
+        <Divider my={8} />
       </Container>
     </Layout>
   )

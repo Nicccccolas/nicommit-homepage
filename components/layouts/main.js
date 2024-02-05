@@ -14,7 +14,10 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Nicolás Pantoja Díaz" />
         <meta name="og:title" content="Nicolas Pantoja Díaz" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/logo3.png" />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/MH55VxdH/logo3.png"
+        />
         <title>Nicolás Pantoja Díaz - Homepage</title>
       </Head>
       <Navbar path={router.asPath} />

@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <Layout>
       <Container maxW="container.lg" /*pl={{ base: '1.9em', lg: '4em' }}*/>
-        <Section delay={0.1}>
+        <Section delay={0.2}>
           <Box
             height="100vh"
             width="100%"
@@ -17,7 +17,7 @@ export default function Page() {
             justifyContent="center"
             textAlign="left"
             mt={-20}
-            // mb={-10}
+            mb={-15}
           >
             <Heading
               as="h1"

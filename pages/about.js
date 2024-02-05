@@ -6,7 +6,8 @@ import {
   Link,
   List,
   ListItem,
-  Icon
+  Icon,
+  Divider
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -23,10 +24,11 @@ import Paragraph from '../components/paragraph'
 export default function About() {
   return (
     <Container maxW="container.lg" px={{ base: 'initial', md: '4em' }} mb={10}>
-      <Section delay={0.2}>
-        <Heading as="h2" variant="section-title">
+      <Section delay={0.4}>
+        <Heading as="h2" fontSize={24} mb={8} variant="section-title">
           About
         </Heading>
+
         <Paragraph>
           Nicolás is a software developer based in Ipiales, Colombia, where his
           passion for backend code takes flight. He thrives on crafting digital
@@ -45,8 +47,10 @@ export default function About() {
         </Box>
       </Section>
 
+      <Divider my={8} />
+
       <Section delay={0.6}>
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" fontSize={24} my={8} variant="section-title">
           I ❤
         </Heading>
         <Paragraph>
@@ -61,7 +65,7 @@ export default function About() {
         </Paragraph>
       </Section>
 
-      <Section delay={0.7}>
+      <Section delay={0.8}>
         <Box
           style={{
             display: 'flex',
@@ -82,8 +86,10 @@ export default function About() {
         </Box>
       </Section>
 
-      <Section delay={0.7}>
-        <Heading as="h3" variant="section-title">
+      <Divider my={8} />
+
+      <Section delay={0.9}>
+        <Heading as="h3" fontSize={24} my={8} variant="section-title">
           On the web
         </Heading>
         <List
@@ -137,6 +143,8 @@ export default function About() {
           </ListItem>
         </List>
       </Section>
+
+      <Divider my={8} />
     </Container>
   )
 }
