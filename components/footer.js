@@ -21,7 +21,7 @@ const Footer = () => {
     >
       <Text>&copy; {new Date().getFullYear()} Nicolás Pantoja Díaz</Text>
       <Box display="flex" fontSize="2em" gap={6}>
-        <Link href="mailto:nicopantojadiaz@gmail.com">
+        <Link href="mailto:nicolaspantojadi@gmail.com">
           <IoMail />
         </Link>
         <Link
