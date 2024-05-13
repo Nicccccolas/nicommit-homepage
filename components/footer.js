@@ -33,7 +33,7 @@ const Footer = () => {
         <Link href="https://linkedin.com/in/nicopantojadiaz" target="_blank">
           <IoLogoLinkedin />
         </Link>
-        <Link href="https://github.com/Nicccccolas" target="_blank">
+        <Link href="https://github.com/niccommit" target="_blank">
           <IoLogoGithub />
         </Link>
       </Box>
