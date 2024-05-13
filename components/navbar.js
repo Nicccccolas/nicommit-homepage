@@ -80,7 +80,7 @@ const Navbar = (props) => {
             Bio
           </LinkItem>
           <LinkItem
-            href="https://github.com/Nicccccolas/nicommit-homepage"
+            href="https://github.com/niccommit/nicommit-homepage"
             target="_blank"
             path={path}
             display="inline-flex"
