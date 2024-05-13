@@ -130,7 +130,7 @@ const Navbar = (props) => {
                   </MenuItem>
                 </NextLink>
                 <NextLink
-                  href="https://github.com/Nicccccolas/nicommit-homepage"
+                  href="https://github.com/niccommit/nicommit-homepage"
                   target="_blank"
                   passHref
                   legacyBehavior
