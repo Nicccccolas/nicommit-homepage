@@ -30,7 +30,7 @@ const Footer = () => {
         >
           <IoLogoWhatsapp />
         </Link>
-        <Link href="https://linkedin.com/in/nicopantojadiaz" target="_blank">
+        <Link href="https://linkedin.com/in/nicopantoja" target="_blank">
           <IoLogoLinkedin />
         </Link>
         <Link href="https://github.com/niccommit" target="_blank">
