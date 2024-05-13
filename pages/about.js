@@ -98,13 +98,13 @@ export default function About() {
           align="center"
         >
           <ListItem>
-            <Link href="https://github.com/Nicccccolas" target="_blank">
+            <Link href="https://github.com/niccommit" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="purple"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @Nicccccolas
+                @niccommit
               </Button>
             </Link>
           </ListItem>
